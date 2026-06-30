@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kala Art - कला कर्म</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🎨 Kala Art</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">होम</a></li>
+                <li><a href="#about" class="nav-link">हमारे बारे में</a></li>
+                <li><a href="#gallery" class="nav-link">गैलरी</a></li>
+                <li><a href="#services" class="nav-link">सेवाएं</a></li>
+                <li><a href="#contact" class="nav-link">संपर्क करें</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Kala Art</h1>
+            <p>आपकी रचनात्मक दुनिया</p>
+            <p class="hero-subtitle">हस्तनिर्मित कलाकृतियों का अनोखा संग्रह</p>
+            <button class="cta-button">अब देखें</button>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-palette"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>हमारे बारे में</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Kala Art एक पारंपरिक कला कर्म का आधुनिक प्रस्तुतिकरण है। हम हाथ से बनी कलाकृतियों को तैयार करते हैं जो आपके जीवन को रंगों और जीवंतता से भर देती हैं।</p>
+                    <p>हमारी टीम कुशल कारीगरों और कलाकारों की है जो परंपरागत तकनीकों का उपयोग करके अद्वितीय रचनाएं बनाते हैं।</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>खुश ग्राहक</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>कलाकृतियां</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>साल का अनुभव</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-hands"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>हमारी गैलरी</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">सभी</button>
+                <button class="filter-btn" data-filter="embroidery">कढ़ाई</button>
+                <button class="filter-btn" data-filter="painting">पेंटिंग</button>
+                <button class="filter-btn" data-filter="sculpture">मूर्तिकला</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item embroidery" data-category="embroidery">
+                    <div class="gallery-image">
+                        <i class="fas fa-stitches"></i>
+                    </div>
+                    <h3>कढ़ाई का काम</h3>
+                    <p>परंपरागत कढ़ाई की डिजाइन</p>
+                </div>
+                <div class="gallery-item painting" data-category="painting">
+                    <div class="gallery-image">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>हाथ से बनी पेंटिंग</h3>
+                    <p>अनोखी पेंटिंग डिजाइन</p>
+                </div>
+                <div class="gallery-item sculpture" data-category="sculpture">
+                    <div class="gallery-image">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>मूर्तिकला</h3>
+                    <p>हाथ से तराशी गई मूर्तियां</p>
+                </div>
+                <div class="gallery-item embroidery" data-category="embroidery">
+                    <div class="gallery-image">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3>वस्त्र कढ़ाई</h3>
+                    <p>कपड़े पर सुंदर कढ़ाई</p>
+                </div>
+                <div class="gallery-item painting" data-category="painting">
+                    <div class="gallery-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>परिदृश्य चित्र</h3>
+                    <p>प्राकृतिक दृश्यों की पेंटिंग</p>
+                </div>
+                <div class="gallery-item sculpture" data-category="sculpture">
+                    <div class="gallery-image">
+                        <i class="fas fa-statue"></i>
+                    </div>
+                    <h3>पत्थर की मूर्तियां</h3>
+                    <p>पारंपरिक पत्थर की नक्काशी</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>हमारी सेवाएं</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-custom"></i>
+                    <h3>कस्टम डिजाइन</h3>
+                    <p>आपकी पसंद के अनुसार कलाकृतियां बनाएं</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>तेजी से डिलीवरी</h3>
+                    <p>आपके दरवाजे पर सुरक्षित डिलीवरी</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>गुणवत्ता की गारंटी</h3>
+                    <p>सर्वोच्च गुणवत्ता की कलाकृतियां</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>व्यक्तिगत सहायता</h3>
+                    <p>सभी कलाकृतियों के लिए सहायता</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>संपर्क करें</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>फोन</h3>
+                            <p>+91 9876543210</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>ईमेल</h3>
+                            <p>info@kalaart.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>पता</h3>
+                            <p>नई दिल्ली, भारत</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="आपका नाम" required>
+                    <input type="email" placeholder="आपका ईमेल" required>
+                    <textarea placeholder="आपका संदेश" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">भेजें</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Kala Art. सभी अधिकार सुरक्षित।</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

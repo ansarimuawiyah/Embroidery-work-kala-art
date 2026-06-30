@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="clock-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-clock"></i> Global Digital Clock</h1>
+            <p>Real-time clock across multiple time zones</p>
+        </header>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="control-group">
+                <label for="time-format">Time Format:</label>
+                <select id="time-format">
+                    <option value="24">24-Hour</option>
+                    <option value="12">12-Hour (AM/PM)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="theme-toggle">
+                    <input type="checkbox" id="theme-toggle">
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+            <button class="add-timezone-btn" id="add-timezone-btn">
+                <i class="fas fa-plus"></i> Add Time Zone
+            </button>
+        </div>
+
+        <!-- Clocks Grid -->
+        <div class="clocks-grid" id="clocks-grid">
+            <!-- Clocks will be dynamically added here -->
+        </div>
+
+        <!-- Add Timezone Modal -->
+        <div class="modal" id="timezone-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add Time Zone</h2>
+                    <button class="close-btn" id="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="timezone-input" placeholder="Search timezone (e.g., Asia/Kolkata, America/New_York)" autocomplete="off">
+                    <div class="timezone-suggestions" id="timezone-suggestions"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-cancel" id="cancel-btn">Cancel</button>
+                    <button class="btn btn-add" id="confirm-add-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
